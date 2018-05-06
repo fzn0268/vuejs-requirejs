@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dialog</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.js"></script>
+        <script src="scripts/dialog.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="styles/dialog.css">
+    </head>
+    <body>
+        <div id="dialog" class="dialog" v-show="display">
+            <div class="title">
+                <header>{{header}}</header>
+                <button>X</button>
+            </div>
+            <div class="content"></div>
+            <div class="footer">
+                <button>OK</button>
+                <button>Cancel</button>
+            </div>
+        </div>
+
+        <script>
+            require.config({
+              baseUrl: 'scripts',
+              paths: {
+                lib: 'lib',
+                vue: 'https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue'
+              }
+            })
+          </script>
+    </body>
+</html>
