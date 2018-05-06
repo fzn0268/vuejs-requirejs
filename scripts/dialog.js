@@ -1,4 +1,4 @@
-require(['vue'], function(Vue) {
+require(['lib/vue'], function(Vue) {
     let app = new Vue({
       el: '#dialog',
       data: {
